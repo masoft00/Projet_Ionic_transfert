@@ -10,7 +10,8 @@ import { LoginService } from '../services/login.service';
 export class MenuPage implements OnInit {
   menus = [
     { title: 'Accueil', url: '/menu/home', icon: 'home' },
-    { title: 'Transactions', url: '/menu/transactions', icon: 'paper-plane' },
+    { title: 'Transactions', url: '/menu/transactions/envoi', icon: 'paper-plane' },
+    { title: 'Détail Transactions', url: '/menu/detail', icon: 'list' },
     { title: 'Deconnexion', url: '/logout', icon: 'log-out' },
   ]
   constructor(private router: Router, private logservice: LoginService) { }

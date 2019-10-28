@@ -12,6 +12,7 @@ const routes: Routes = [
     children:[
       { path: 'home', loadChildren: () => import('../home/home.module').then( m => m.HomePageModule)},
       { path: 'transactions', loadChildren: '../transactions/transactions.module#TransactionsPageModule' },
+      { path: 'detail', loadChildren: '../detail/detail.module#DetailPageModule' },
     ]
   }
 ];

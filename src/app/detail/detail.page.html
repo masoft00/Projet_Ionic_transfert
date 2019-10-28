@@ -4,7 +4,7 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>
-      Transactions
+      Détails
     </ion-title>
     <ion-img [src]='bas_de_page.logo' class="img" slot="end"></ion-img>
   </ion-toolbar>
@@ -12,14 +12,24 @@
 
 <ion-tabs color="tertiary">
   <ion-tab-bar slot="top" class="sous_menu">
-    <ion-tab-button tab="envoi">
+    <ion-tab-button tab="detailenvoi">
       <ion-icon name="send"></ion-icon>
-      <ion-label>Envoi</ion-label>
+      <ion-label>Détail Envoi</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button tab="retrait">
+    <ion-tab-button tab="detailretrait">
       <ion-icon name="trending-down"></ion-icon>
-      <ion-label>Retrait</ion-label>
+      <ion-label>Détail Retrait</ion-label>
+    </ion-tab-button>
+    
+    <ion-tab-button tab="comenvoi">
+      <ion-icon name="trending-down"></ion-icon>
+      <ion-label>Com Envoi</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="comretrait">
+      <ion-icon name="trending-down"></ion-icon>
+      <ion-label>Com Retrait</ion-label>
     </ion-tab-button>
   </ion-tab-bar>
 </ion-tabs>

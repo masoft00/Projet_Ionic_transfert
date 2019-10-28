@@ -15,6 +15,7 @@ export class TransactionsPage implements OnInit {
   menus = [
     { title: 'Envoi', url: 'transactions/envoi', icon: 'send' },
     { title: 'Retrait', url: 'transactions/retrait', icon: 'trending-down' },
+   
   ]
   constructor(
     private router: Router, 

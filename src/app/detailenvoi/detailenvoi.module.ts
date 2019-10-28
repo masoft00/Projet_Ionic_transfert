@@ -2,13 +2,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
+
 import { IonicModule } from '@ionic/angular';
-import { RetraitPage } from './retrait.page';
+
+import { DetailenvoiPage } from './detailenvoi.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: RetraitPage
+    component: DetailenvoiPage
   }
 ];
 
@@ -19,6 +21,6 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [RetraitPage]
+  declarations: [DetailenvoiPage]
 })
-export class RetraitPageModule {}
+export class DetailenvoiPageModule {}
